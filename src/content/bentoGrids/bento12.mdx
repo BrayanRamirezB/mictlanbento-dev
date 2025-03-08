@@ -1,0 +1,74 @@
+---
+name: Solid Color 5
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#0d0e0e' color='bg-[#0d0e0e]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#f4f5f5] rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+    <div className='col-start-2 md:col-start-2 md:col-span-2 bg-[#0d0e0e]/90 rounded-3xl'>1</div>
+    <div className='col-span-2 bg-[#0d0e0e]/90 rounded-3xl'>2</div>
+    <div className='bg-[#0d0e0e]/90 rounded-3xl'>3</div>
+
+    <div className='md:row-start-2 bg-[#0d0e0e]/90 rounded-3xl'>4</div>
+    <div className='col-span-2 bg-[#0d0e0e]/90 rounded-3xl'>5</div>
+    <div className='md:col-span-2 bg-[#0d0e0e]/90 rounded-3xl'>6</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div
+    class="col-start-2 md:col-start-2 md:col-span-2 bg-[#0d0e0e]/90 rounded-3xl"
+  ></div>
+  <div class="col-span-2 bg-[#0d0e0e]/90 rounded-3xl"></div>
+  <div class="bg-[#0d0e0e]/90 rounded-3xl"></div>
+
+  <div class="md:row-start-2 bg-[#0d0e0e]/90 rounded-3xl"></div>
+  <div class="col-span-2 bg-[#0d0e0e]/90 rounded-3xl"></div>
+  <div class="md:col-span-2 bg-[#0d0e0e]/90 rounded-3xl"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center bg-[#f4f5f5] rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+    <div className='order-2 md:order-none bg-[#0d0e0e]/90 rounded-lg'>1</div>
+    <div className='order-1 md:order-none col-span-2 bg-[#0d0e0e]/90 rounded-lg'>2</div>
+
+    <div className='order-4 md:order-none col-span-2 bg-[#0d0e0e]/90 rounded-lg'>3</div>
+    <div className='order-3 md:order-none bg-[#0d0e0e]/90 rounded-lg'>4</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="order-2 md:order-none bg-[#0d0e0e]/90 rounded-lg"></div>
+  <div
+    class="order-1 md:order-none col-span-2 bg-[#0d0e0e]/90 rounded-lg"
+  ></div>
+
+  <div
+    class="order-4 md:order-none col-span-2 bg-[#0d0e0e]/90 rounded-lg"
+  ></div>
+  <div class="order-3 md:order-none bg-[#0d0e0e]/90 rounded-lg"></div>
+</div>
+```
+
+</CodeBlock>

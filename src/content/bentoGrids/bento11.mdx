@@ -1,0 +1,71 @@
+---
+name: Solid Color 4
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge
+    text='#f6f6f7'
+    color='bg-[#f6f6f7]'
+    textColor='text-zinc-700'
+    client:load
+  />
+</div>
+
+<div className='flex items-center justify-center rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-700'>
+    <div className='order-2 md:order-none bg-[#f6f6f7] rounded-lg'>1</div>
+    <div className='order-3 md:order-none bg-[#f6f6f7] rounded-lg'>2</div>
+    <div className='order-1 md:order-none row-span-2 bg-[#f6f6f7] rounded-lg'>3</div>
+
+    <div className='order-4 md:order-none col-span-2 bg-[#f6f6f7] rounded-lg'>4</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="order-2 md:order-none bg-[#f6f6f7] rounded-lg"></div>
+  <div class="order-3 md:order-none bg-[#f6f6f7] rounded-lg"></div>
+  <div class="order-1 md:order-none row-span-2 bg-[#f6f6f7] rounded-lg"></div>
+
+  <div class="order-4 md:order-none col-span-2 bg-[#f6f6f7] rounded-lg"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-700'>
+    <div className='row-span-2 bg-[#f6f6f7] rounded-lg'>1</div>
+    <div className='bg-[#f6f6f7] rounded-lg'>2</div>
+    <div className='bg-[#f6f6f7] rounded-lg'>3</div>
+
+    <div className='bg-[#f6f6f7] rounded-lg'>4</div>
+    <div className='bg-[#f6f6f7] rounded-lg'>5</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="row-span-2 bg-[#f6f6f7] rounded-lg"></div>
+  <div class="bg-[#f6f6f7] rounded-lg"></div>
+  <div class="bg-[#f6f6f7] rounded-lg"></div>
+
+  <div class="bg-[#f6f6f7] rounded-lg"></div>
+  <div class="bg-[#f6f6f7] rounded-lg"></div>
+</div>
+```
+
+</CodeBlock>

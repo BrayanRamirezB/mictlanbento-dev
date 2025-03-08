@@ -47,6 +47,60 @@
       "title": "Glassmorphism 2",
       "image": "/thumbnails/bento8.webp",
       "href": "/bentoGrids/bento8"
+    },
+    {
+      "id": 8,
+      "title": "Gradient",
+      "image": "/thumbnails/bento9.webp",
+      "href": "/bentoGrids/bento9"
+    },
+    {
+      "id": 9,
+      "title": "Gradient 2",
+      "image": "/thumbnails/bento10.webp",
+      "href": "/bentoGrids/bento10"
+    },
+    {
+      "id": 10,
+      "title": "Solid Color 4",
+      "image": "/thumbnails/bento11.webp",
+      "href": "/bentoGrids/bento11"
+    },
+    {
+      "id": 11,
+      "title": "Solid Color 5",
+      "image": "/thumbnails/bento12.webp",
+      "href": "/bentoGrids/bento12"
+    },
+    {
+      "id": 12,
+      "title": "Glassmorphism 3",
+      "image": "/thumbnails/bento13.webp",
+      "href": "/bentoGrids/bento13"
+    },
+    {
+      "id": 13,
+      "title": "Solid Color 6",
+      "image": "/thumbnails/bento14.webp",
+      "href": "/bentoGrids/bento14"
+    },
+    {
+      "id": 14,
+      "title": "Solid Colors Combinations 3",
+      "image": "/thumbnails/bento15.webp",
+      "href": "/bentoGrids/bento15"
+    },
+    {
+      "id": 15,
+      "title": "Solid Colors Combinations 4",
+      "image": "/thumbnails/bento16.webp",
+      "href": "/bentoGrids/bento16"
+    },
+    {
+      "id": 16,
+      "title": "Solid Color 7",
+      "image": "/thumbnails/bento17.webp",
+      "href": "/bentoGrids/bento17"
     }
   ]
 }

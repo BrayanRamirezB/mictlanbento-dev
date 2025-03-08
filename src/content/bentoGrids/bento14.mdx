@@ -1,0 +1,60 @@
+---
+name: Solid Color 6
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#181918' color='bg-[#181918]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#111310] rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(2,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+    <div className='row-span-2 bg-[#181918] rounded-md'>1</div>
+    <div className='bg-[#181918] rounded-md'>2</div>
+   
+    <div className='row-span-2 bg-[#181918] rounded-md'>3</div>
+    <div className='bg-[#181918] rounded-md'>4</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(2,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="row-span-2 bg-[#181918] rounded-md"></div>
+  <div class="bg-[#181918] rounded-md"></div>
+
+  <div class="row-span-2 bg-[#181918] rounded-md"></div>
+  <div class="bg-[#181918] rounded-md"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center bg-[#111310] rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(1,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+    <div className='bg-[#181918] rounded-md'>1</div>
+    <div className='bg-[#181918] rounded-md'>2</div>
+    <div className='bg-[#181918] rounded-md'>3</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(1,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="bg-[#181918] rounded-md"></div>
+  <div class="bg-[#181918] rounded-md"></div>
+  <div class="bg-[#181918] rounded-md"></div>
+</div>
+```
+
+</CodeBlock>

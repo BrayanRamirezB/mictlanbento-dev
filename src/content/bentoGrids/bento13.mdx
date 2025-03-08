@@ -1,0 +1,49 @@
+---
+name: Glassmorphism 3
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#15192f' color='bg-[#15192f]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[url(/backgrounds/light.webp)] bg-cover bg-center rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+    <div className='md:col-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg'>1</div>
+    <div className='md:col-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg'>2</div>
+    <div className='md:col-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg'>3</div>
+
+    <div className='col-span-3 row-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg'>4</div>
+    <div className='col-span-3 row-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg'>5</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div
+    class="md:col-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg"
+  ></div>
+  <div
+    class="md:col-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg"
+  ></div>
+  <div
+    class="md:col-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg"
+  ></div>
+
+  <div
+    class="col-span-3 row-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg"
+  ></div>
+  <div
+    class="col-span-3 row-span-2 bg-[#15192f]/30 backdrop-blur-sm saturate-150 border border-[#17182d]/30 rounded-lg"
+  ></div>
+</div>
+```
+
+</CodeBlock>

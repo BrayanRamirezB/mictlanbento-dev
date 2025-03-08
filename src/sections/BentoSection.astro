@@ -4,7 +4,7 @@ import data from '@/data/bento-grids.json'
 ---
 
 <div
-  class='grid grid-cols-[repeat(2,1fr)] md:grid-cols-[repeat(3,1fr)] lg:grid-cols-[repeat(4,1fr)] gap-3'
+  class='grid grid-cols-[repeat(2,1fr)] md:grid-cols-[repeat(3,1fr)] lg:grid-cols-[repeat(4,1fr)] gap-x-3 gap-y-4'
 >
   {data.bentoGrids.map((bento) => <BentoCard bento={bento} />)}
 </div>

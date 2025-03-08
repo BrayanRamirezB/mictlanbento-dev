@@ -1,0 +1,96 @@
+---
+name: Gradient
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#35228c' color='bg-[#35228c]' client:load />
+  <Badge text='#090714' color='bg-[#090714]' client:load />
+  <Badge text='#32238e' color='bg-[#32238e]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[url(/backgrounds/light.webp)] bg-cover bg-center rounded-xl p-4'>
+    <div className='grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(2,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+        <div className='bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e]  rounded-md'>1</div>
+        <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-1 gap-x-4'>
+            <div className='bg-gradient-to-t from-[#35228c] via-[#35228c]/80 to-[#090714]/80 border border-[#32238e] rounded-md size-full'>2</div>
+            <div className='bg-gradient-to-t from-[#35228c] via-[#35228c]/80 to-[#090714]/80 border border-[#32238e] rounded-md size-full'>3</div>
+        </div>
+
+        <div className='row-span-2 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md'>4</div>
+        <div className='bg-[#090714]/80 border border-[#32238e] rounded-md'>5</div>
+        <div className='bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md'>6</div>
+    </div>
+
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(2,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div
+    class="bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e]  rounded-md"
+  ></div>
+  <div class="grid grid-cols-[repeat(2,1fr)] grid-rows-1 gap-x-4">
+    <div
+      class="bg-gradient-to-t from-[#35228c] via-[#35228c]/80 to-[#090714]/80 border border-[#32238e] rounded-md size-full"
+    ></div>
+    <div
+      class="bg-gradient-to-t from-[#35228c] via-[#35228c]/80 to-[#090714]/80 border border-[#32238e] rounded-md size-full"
+    ></div>
+  </div>
+
+  <div
+    class="row-span-2 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md"
+  ></div>
+  <div class="bg-[#090714]/80 border border-[#32238e] rounded-md"></div>
+  <div
+    class="bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md"
+  ></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center bg-[url(/backgrounds/light.webp)] bg-cover bg-center rounded-xl p-4'>
+    <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+        <div className='bg-[#090714]/80 border border-[#32238e] rounded-md'>1</div>
+        <div className='row-span-2 bg-gradient-to-t from-[#35228c] via-[#35228c]/80 to-[#090714]/80 border border-[#32238e] rounded-md'>2</div>
+        <div className='row-span-3 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md'>3</div>
+
+        <div className='row-span-3 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md'>4</div>
+        <div className='row-span-2 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md'>5</div>
+        <div className='bg-[#090714]/80 border border-[#32238e] rounded-md'>6</div>
+    </div>
+
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="bg-[#090714]/80 border border-[#32238e] rounded-md"></div>
+  <div
+    class="row-span-2 bg-gradient-to-t from-[#35228c] via-[#35228c]/80 to-[#090714]/80 border border-[#32238e] rounded-md"
+  ></div>
+  <div
+    class="row-span-3 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md"
+  ></div>
+
+  <div
+    class="row-span-3 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md"
+  ></div>
+  <div
+    class="row-span-2 bg-[#090714]/30 bg-[radial-gradient(at_50%_0%,_rgba(53,34,140,1)_0%,_rgba(9,7,14,.8)_59%)] border border-[#32238e] rounded-md"
+  ></div>
+  <div class="bg-[#090714]/80 border border-[#32238e] rounded-md"></div>
+</div>
+```
+
+</CodeBlock>
