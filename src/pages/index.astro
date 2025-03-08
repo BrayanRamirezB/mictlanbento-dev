@@ -1,0 +1,26 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import SectionContainer from '@/sections/SectionContainer.astro'
+import BentoSection from '@/sections/BentoSection.astro'
+---
+
+<Layout>
+  <main
+    class='max-w-7xl px-2 lg:px-10 mx-auto mt-24 md:mt-14 animate-fade-in-up'
+  >
+    <SectionContainer
+      class='flex flex-col items-center justify-center py-10 gap-y-4 max-w-2xl cursor-default'
+    >
+      <h1 class='text-3xl md:text-4xl text-center text-pretty font-bold'>
+        Colección de Bento Grids modernos, hechos con Astro y Tailwind CSS.
+      </h1>
+      <p class='text-md md:text-lg text-center text-pretty text-neutral-300'>
+        Listos para usar en tu proyecto, simplemente copia y pega el código.
+      </p>
+    </SectionContainer>
+
+    <SectionContainer class='flex items-center justify-center py-10'>
+      <BentoSection />
+    </SectionContainer>
+  </main>
+</Layout>

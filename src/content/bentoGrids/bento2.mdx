@@ -1,0 +1,247 @@
+---
+name: Solid Colors Combinations 2
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#6b4dfc' color='bg-[#6b4dfc]' client:load />
+  <Badge
+    text='#94d9fd'
+    color='bg-[#94d9fd]'
+    textColor='text-zinc-800'
+    client:load
+  />
+  <Badge text='#5fc4fc' color='bg-[#5fc4fc]' client:load />
+  <Badge
+    text='#9eed01'
+    color='bg-[#9eed01]'
+    textColor='text-zinc-800'
+    client:load
+  />
+  <Badge
+    text='#efeff1'
+    color='bg-[#efeff1]'
+    textColor='text-zinc-800'
+    client:load
+  />
+</div>
+
+<div className='flex items-center justify-center pb-8'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='col-span-2 row-span-3 bg-[#6b4dfc] rounded-2xl'>1</div>
+    <div className='row-span-2 bg-[#94d9fd] rounded-2xl'>2</div>
+
+    <div className='row-span-2 bg-[#5fc4fc] rounded-2xl'>3</div>
+    <div className='bg-[#9eed01] rounded-2xl'>4</div>
+    <div className='bg-[#efeff1] rounded-2xl'>5</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="col-span-2 row-span-3 bg-[#6b4dfc] rounded-2xl"></div>
+  <div class="row-span-2 bg-[#94d9fd] rounded-2xl"></div>
+
+  <div class="row-span-2 bg-[#5fc4fc] rounded-2xl"></div>
+  <div class="bg-[#9eed01] rounded-2xl"></div>
+  <div class="bg-[#efeff1] rounded-2xl"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex flex-row items-center justify-center gap-x-2 p-8'>
+  <Badge text='#ed3125' color='bg-[#ed3125]' client:load />
+  <Badge
+    text='#f0f2f4'
+    color='bg-[#f0f2f4]'
+    textColor='text-zinc-800'
+    client:load
+  />
+  <Badge
+    text='#cce1fa'
+    color='bg-[#cce1fa]'
+    textColor='text-zinc-800'
+    client:load
+  />
+</div>
+
+<div className='flex items-center justify-center pb-8'>
+  <div className='grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(9,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='col-span-1 row-span-3 md:row-span-4 bg-[#ed3125] rounded-2xl'>1</div>
+    <div className='row-span-2 md:row-span-3 bg-[#f0f2f4] rounded-2xl'>2</div>
+
+    <div className='col-span-1 row-span-3 md:row-span-4 bg-[#cce1fa] rounded-2xl'>3</div>
+    <div className='bg-[#ed3125] rounded-2xl'>4</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="col-span-1 row-span-4 bg-[#ed3125] rounded-2xl"></div>
+  <div class="row-span-3 bg-[#f0f2f4] rounded-2xl"></div>
+
+  <div class="col-span-1 row-span-4 bg-[#cce1fa] rounded-2xl"></div>
+  <div class="bg-[#ed3125] rounded-2xl"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex flex-row items-center justify-center gap-x-2 p-8'>
+  <Badge
+    text='#eff3f0'
+    color='bg-[#eff3f0]'
+    textColor='text-zinc-800'
+    client:load
+  />
+</div>
+
+<div className='flex items-center justify-center pb-8'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(7,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='col-span-2 md:col-span-1 row-span-2 bg-[#eff3f0] rounded-2xl'>1</div>
+    <div className='col-span-2 bg-[#eff3f0] rounded-2xl'>2</div>
+
+    <div className='col-span-2 bg-[#eff3f0] rounded-2xl'>3</div>
+
+    <div className='order-last md:order-none bg-[#eff3f0] rounded-2xl'>4</div>
+    <div className='row-span-2 bg-[#eff3f0] rounded-2xl'>5</div>
+    <div className='row-span-2 bg-[#eff3f0] rounded-2xl'>6</div>
+
+    <div className='bg-[#eff3f0] rounded-2xl'>7</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(7,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(4,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div
+    class="col-span-2 md:col-span-1 row-span-2 bg-[#eff3f0] rounded-2xl"
+  ></div>
+  <div class="col-span-2 bg-[#eff3f0] rounded-2xl"></div>
+
+  <div class="col-span-2 bg-[#eff3f0] rounded-2xl"></div>
+
+  <div class="order-last md:order-none bg-[#eff3f0] rounded-2xl"></div>
+  <div class="row-span-2 bg-[#eff3f0] rounded-2xl"></div>
+  <div class="row-span-2 bg-[#eff3f0] rounded-2xl"></div>
+
+  <div class="bg-[#eff3f0] rounded-2xl"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 p-8'>
+  <Badge
+    text='#9df1f4'
+    color='bg-[#9df1f4]'
+    textColor='text-zinc-800'
+    client:load
+  />
+  <Badge
+    text='#9cddfb'
+    color='bg-[#9cddfb]'
+    textColor='text-zinc-800'
+    client:load
+  />
+  <Badge
+    text='#f1f0f3'
+    color='bg-[#f1f0f3]'
+    textColor='text-zinc-800'
+    client:load
+  />
+  <Badge
+    text='#fbe5c5'
+    color='bg-[#fbe5c5]'
+    textColor='text-zinc-800'
+    client:load
+  />
+</div>
+
+<div className='flex items-center justify-center pb-8'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='row-span-2 bg-[#9df1f4] rounded-2xl'>1</div>
+    <div className='order-1 md:order-none col-span-2 md:col-span-1 row-span-3 bg-[#9cddfb] rounded-2xl'>2</div>
+    <div className='bg-[#f1f0f3] rounded-2xl'>3</div>
+
+    <div className='row-span-2 bg-[#fbe5c5] rounded-2xl'>4</div>
+    <div className='bg-[#f1f0f3] rounded-2xl'>5</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="row-span-2 bg-[#9df1f4] rounded-2xl"></div>
+  <div
+    class="order-1 md:order-none col-span-2 md:col-span-1 row-span-3 bg-[#9cddfb] rounded-2xl"
+  ></div>
+  <div class="bg-[#f1f0f3] rounded-2xl"></div>
+
+  <div class="row-span-2 bg-[#fbe5c5] rounded-2xl"></div>
+  <div class="bg-[#f1f0f3] rounded-2xl"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex flex-row items-center justify-center gap-x-2 p-8'>
+  <Badge
+    text='#d6e9fd'
+    color='bg-[#d6e9fd]'
+    textColor='text-zinc-800'
+    client:load
+  />
+</div>
+
+<div className='flex items-center justify-center pb-8'>
+  <div className='grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(2,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='row-span-2 bg-[#d6e9fd] rounded-2xl'>1</div>
+    <div className='bg-[#d6e9fd] rounded-2xl'>2</div>
+
+    <div className='bg-[#d6e9fd] rounded-2xl'>3</div>
+
+    <div className='bg-[#d6e9fd] rounded-2xl'>4</div>
+    <div className='bg-[#d6e9fd] rounded-2xl'>5</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(1,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(2,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="row-span-2 bg-[#d6e9fd] rounded-2xl"></div>
+  <div class="bg-[#d6e9fd] rounded-2xl"></div>
+
+  <div class="bg-[#d6e9fd] rounded-2xl"></div>
+
+  <div class="bg-[#d6e9fd] rounded-2xl"></div>
+  <div class="bg-[#d6e9fd] rounded-2xl"></div>
+</div>
+```
+
+</CodeBlock>

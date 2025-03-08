@@ -1,0 +1,11 @@
+---
+const { bento } = Astro.props
+---
+
+<a
+  href={bento.href}
+  class='flex flex-col items-center justify-center gap-y-3 rounded-lg border-0 backdrop-blur-sm bg-zinc-700/30 p-4 transition duration-500 ease-in-out hover:-translate-y-2 hover:bg-[#6452ff]/50'
+>
+  <img src={bento.image} alt={bento.title} class='w-full h-auto rounded-lg' />
+  <h2 class='text-lg font-bold'>{bento.title}</h2>
+</a>

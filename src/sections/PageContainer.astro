@@ -1,0 +1,31 @@
+---
+const { title } = Astro.props
+
+const proseStyles = {
+  hStyles: 'prose-headings:font-semibold prose-headings:text-neutral-100',
+  pStyles: 'prose-p:my-2 prose-p:text-neutral-200',
+  ulStyles: 'prose-ul:list-disc prose-ul:list-inside prose-ul:text-gray-300',
+  blockquoteStyles:
+    'prose-p:prose-blockquote:text-blue-600 prose-blockquote:p-2 prose-blockquote:rounded-xl prose-blockquote:my-2 prose-blockquote:border-s-4 prose-blockquote:backdrop-blur-md prose-blockquote:shadow-lg prose-blockquote:border-blue-500 prose-blockquote:bg-blue-300/30 prose-blockquote:bg-blue-800/30',
+  preStyles:
+    'prose-pre:m-0 prose-pre:p-0 prose-pre:text-sm prose-pre:font-medium',
+  codeStyles:
+    'prose-code:bg-green-300/30 prose-code:text-green-600 prose-code:font-medium prose-code:px-2.5 prose-code:py-0.5 prose-code:rounded-sm prose-code:backdrop-blur-md prose-code:shadow-lg'
+}
+---
+
+<div class='p-4 w-full animate-fade-in-up'>
+  <div class='p-8 rounded-lg shadow-xl backdrop-blur border-0 bg-neutral-100/5'>
+    <div class='mx-auto'>
+      <h1 class='pt-8 pb-4 text-3xl font-extrabold md:text-4xl lg:text-5xl'>
+        {title}
+      </h1>
+    </div>
+
+    <div
+      class=`pt-8 mx-auto prose-base ${proseStyles.hStyles} ${proseStyles.pStyles} ${proseStyles.ulStyles} ${proseStyles.blockquoteStyles} ${proseStyles.preStyles} ${proseStyles.codeStyles}`
+    >
+      <slot />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+---
+name: Solid Color (#fafbfa)
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge
+    text='#fafbfa'
+    color='bg-[#fafbfa]'
+    textColor='text-zinc-800'
+    client:load
+  />
+</div>
+
+<div className='flex items-center justify-center p-4 bg-[#f6f8f9] rounded-xl'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='row-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>1</div>
+    <div className='bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>2</div>
+
+    <div className='row-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>3</div>
+    <div className='bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>4</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px]"
+>
+  <div
+    class="row-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"
+  ></div>
+  <div class="bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"></div>
+
+  <div
+    class="row-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"
+  ></div>
+  <div class="bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center p-4 bg-[#f6f8f9] rounded-xl'>
+  <div className='grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(2,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='col-span-3 md:col-span-3 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>1</div>
+    <div className='col-span-3 md:col-span-3 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>2</div>
+
+    <div className='col-span-1 md:col-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>3</div>
+    <div className='col-span-1 md:col-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>4</div>
+    <div className='col-span-1 md:col-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md'>5</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(2,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px]"
+>
+  <div
+    class="col-span-3 md:col-span-3 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"
+  ></div>
+  <div
+    class="col-span-3 md:col-span-3 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"
+  ></div>
+
+  <div
+    class="col-span-1 md:col-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"
+  ></div>
+  <div
+    class="col-span-1 md:col-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"
+  ></div>
+  <div
+    class="col-span-1 md:col-span-2 bg-[#fafbfa] border border-[#e9e8e9] rounded-lg shadow-md"
+  ></div>
+</div>
+```
+
+</CodeBlock>

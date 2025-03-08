@@ -1,0 +1,52 @@
+{
+  "bentoGrids": [
+    {
+      "id": 0,
+      "title": "Solid Colors Combinations",
+      "image": "/thumbnails/bento1.webp",
+      "href": "/bentoGrids/bento1"
+    },
+    {
+      "id": 1,
+      "title": "Solid Colors Combinations 2",
+      "image": "/thumbnails/bento2.webp",
+      "href": "/bentoGrids/bento2"
+    },
+    {
+      "id": 2,
+      "title": "Solid Color",
+      "image": "/thumbnails/bento3.webp",
+      "href": "/bentoGrids/bento3"
+    },
+    {
+      "id": 3,
+      "title": "Glassmorphism",
+      "image": "/thumbnails/bento4.webp",
+      "href": "/bentoGrids/bento4"
+    },
+    {
+      "id": 4,
+      "title": "Solid Color 2",
+      "image": "/thumbnails/bento5.webp",
+      "href": "/bentoGrids/bento5"
+    },
+    {
+      "id": 5,
+      "title": "Solid Color 3",
+      "image": "/thumbnails/bento6.webp",
+      "href": "/bentoGrids/bento6"
+    },
+    {
+      "id": 6,
+      "title": "Solid Colors Combinations 3",
+      "image": "/thumbnails/bento7.webp",
+      "href": "/bentoGrids/bento7"
+    },
+    {
+      "id": 7,
+      "title": "Glassmorphism 2",
+      "image": "/thumbnails/bento8.webp",
+      "href": "/bentoGrids/bento8"
+    }
+  ]
+}

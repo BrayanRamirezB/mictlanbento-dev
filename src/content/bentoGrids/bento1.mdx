@@ -1,0 +1,49 @@
+---
+name: Three Solid Colors
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row items-center justify-center gap-x-2 pb-8'>
+  <Badge
+    text='#f2ece2'
+    color='bg-[#f2ece2]'
+    textColor='text-zinc-800'
+    client:load
+  />
+  <Badge text='#034d43' color='bg-[#034d43]' client:load />
+  <Badge text='#d50203' color='bg-[#d50203]' client:load />
+</div>
+
+<div className='flex items-center justify-center pb-8'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px] content-bento text-zinc-800'>
+    <div className='col-span-2 bg-[#f2ece2] rounded-xl'>1</div>
+    <div className='bg-[#034d43] rounded-xl'>2</div>
+
+    <div className='bg-[#d50203] rounded-xl'>3</div>
+    <div className='bg-[#f2ece2] rounded-xl'>4</div>
+    <div className='row-span-2 bg-[#f2ece2] rounded-xl'>5</div>
+
+    <div className='bg-[#f2ece2] rounded-xl'>6</div>
+    <div className='col-span-2 md:col-span-1 bg-[#034d43] rounded-xl'>7</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+```html
+<div class='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px]'>
+    <div class='col-span-2 bg-[#f2ece2] rounded-xl'></div>
+    <div class='bg-[#034d43] rounded-xl'></div>
+
+    <div class='bg-[#d50203] rounded-xl'></div>
+    <div class='bg-[#f2ece2] rounded-xl'></div>
+    <div class='row-span-2 bg-[#f2ece2] rounded-xl'></div>
+
+    <div class='bg-[#f2ece2] rounded-xl'></div>
+    <div class='col-span-2 md:col-span-1 bg-[#034d43] rounded-xl'></div>
+
+</div>
+```
+</CodeBlock>

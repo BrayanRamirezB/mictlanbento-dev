@@ -1,0 +1,57 @@
+---
+import '@/styles/global.css'
+import '@fontsource-variable/onest'
+import Header from '@/sections/Header.astro'
+import Footer from '@/sections/Footer.astro'
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/webp' href='/mictlan-logo.webp' />
+    <title>MictlanBento</title>
+  </head>
+  <body class='relative text-neutral-100'>
+    <div
+      class='absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-zinc-950
+      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(51,35,134,0.9),rgba(15,12,41,0.2))]'
+    >
+    </div>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: 'Onest Variable', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+  }
+
+  .content-bento div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  pre.astro-code.github-dark {
+    background-color: transparent !important;
+  }
+
+  span.line {
+    white-space: pre-wrap;
+  }
+</style>
