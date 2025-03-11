@@ -1,0 +1,52 @@
+---
+name: Solid Colors Combinations 5
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#fdb02f' color='bg-[#fdb02f]' client:load />
+  <Badge text='#217ef6' color='bg-[#217ef6]' client:load />
+  <Badge text='#480303' color='bg-[#480303]' client:load />
+  <Badge text='#fc4c21' color='bg-[#fc4c21]' client:load />
+  <Badge text='#fb97be' color='bg-[#fb97be]' client:load />
+  <Badge text='#b8ce1a' color='bg-[#b8ce1a]' client:load />
+</div>
+
+<div className='flex items-center justify-center p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(4,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(7,1fr)] md:grid-rows-[repeat(3,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='bg-[#fdb02f] rounded-2xl'>1</div>
+    <div className='col-span-3 md:col-span-2 bg-[#217ef6] rounded-2xl'>2</div>
+    <div className='col-span-4 row-span-2 bg-[#480303] rounded-2xl'>3</div>
+
+    <div className='bg-[#fc4c21] rounded-2xl'>4</div>
+    <div className='col-span-3 md:col-span-2 bg-[#fb97be] rounded-2xl'>5</div>
+
+    <div className='col-span-2 bg-[#480303] rounded-2xl'>6</div>
+    <div className='col-span-2 bg-[#b8ce1a] rounded-2xl'>7</div>
+    <div className='col-span-4 md:col-span-3 bg-[#fdb02f] rounded-2xl'>8</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(4,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(7,1fr)] md:grid-rows-[repeat(3,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px]"
+>
+  <div class="bg-[#fdb02f] rounded-2xl"></div>
+  <div class="col-span-3 md:col-span-2 bg-[#217ef6] rounded-2xl"></div>
+  <div class="col-span-4 row-span-2 bg-[#480303] rounded-2xl"></div>
+
+  <div class="bg-[#fc4c21] rounded-2xl"></div>
+  <div class="col-span-3 md:col-span-2 bg-[#fb97be] rounded-2xl"></div>
+
+  <div class="col-span-2 bg-[#480303] rounded-2xl"></div>
+  <div class="col-span-2 bg-[#b8ce1a] rounded-2xl"></div>
+  <div class="col-span-4 md:col-span-3 bg-[#fdb02f] rounded-2xl"></div>
+</div>
+```
+
+</CodeBlock>

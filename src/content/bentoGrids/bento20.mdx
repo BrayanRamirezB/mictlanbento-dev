@@ -1,0 +1,53 @@
+---
+name: Glassmorphism 4
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#20123d' color='bg-[#20123d]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[url(/backgrounds/light.webp)] bg-cover bg-center rounded-xl p-4'>
+  <div className='grid grid-cols-[repeat(4,1fr)] grid-rows-[repeat(9,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(5,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+    <div className='col-span-4 md:col-span-3 row-span-2 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md'>1</div>
+    <div className='col-span-4 md:col-span-3 row-span-2 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md'>2</div>
+    
+    <div className='col-span-2 row-span-3 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md'>3</div>
+    <div className='col-span-2 row-span-2 md:row-span-1 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md'>4</div>
+    <div className='col-span-2 row-span-3 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md'>5</div>
+    <div className='col-span-2 row-span-2 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md'>6</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(4,1fr)] grid-rows-[repeat(9,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(5,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div
+    class="col-span-4 md:col-span-3 row-span-2 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md"
+  ></div>
+  <div
+    class="col-span-4 md:col-span-3 row-span-2 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md"
+  ></div>
+
+  <div
+    class="col-span-2 row-span-3 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md"
+  ></div>
+  <div
+    class="col-span-2 row-span-2 md:row-span-1 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md"
+  ></div>
+  <div
+    class="col-span-2 row-span-3 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md"
+  ></div>
+  <div
+    class="col-span-2 row-span-2 bg-[#20123d]/30 backdrop-blur-sm saturate-150 border border-[#1d152f]/30 rounded-md"
+  ></div>
+</div>
+```
+
+</CodeBlock>

@@ -1,0 +1,64 @@
+---
+name: Gradient 3
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge
+    text='#aaebe1'
+    color='bg-[#aaebe1]'
+    textColor='text-zinc-700'
+    client:load
+  />
+  <Badge text='#053c42' color='bg-[#053c42]' client:load />
+  <Badge
+    text='#01e38e'
+    color='bg-[#01e38e]'
+    textColor='text-zinc-700'
+    client:load
+  />
+  <Badge text='#039d98' color='bg-[#039d98]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#e5faf4] rounded-xl p-4'>
+    <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px] content-bento'>
+        <div className='col-span-2 bg-[#aaebe1] rounded-xl'>1</div>
+        <div className='row-span-3 md:row-span-2 bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl'>2</div>
+        <div className='order-last md:order-none col-span-2 bg-[#053c42] rounded-xl'>3</div>
+
+        <div className='bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl'>4</div>
+        <div className='bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl'>5</div>
+        <div className='bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl'>6</div>
+    </div>
+
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(5,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(3,1fr)] gap-4 w-full min-h-[500px]"
+>
+  <div class="col-span-2 bg-[#aaebe1] rounded-xl"></div>
+  <div
+    class="row-span-3 md:row-span-2 bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl"
+  ></div>
+  <div
+    class="order-last md:order-none col-span-2 bg-[#053c42] rounded-xl"
+  ></div>
+
+  <div
+    class="bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl"
+  ></div>
+  <div
+    class="bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl"
+  ></div>
+  <div
+    class="bg-[#039d98] bg-gradient-to-tr from-[#039d98] via-[#01e38e]/80 to-[#01e38e] rounded-xl"
+  ></div>
+</div>
+```
+
+</CodeBlock>

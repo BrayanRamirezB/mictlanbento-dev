@@ -1,0 +1,94 @@
+---
+name: Solid Color 8
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#17181b' color='bg-[#17181b]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#0b0a0d] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(12,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(6,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='bg-[#17181b] rounded-xl'>1</div>
+    <div className='bg-[#17181b] rounded-xl'>2</div>
+    <div className='bg-[#17181b] rounded-xl'>3</div>
+    <div className='col-span-2 row-span-3 bg-[#17181b] rounded-xl'>4</div>
+    <div className='row-span-3 bg-[#17181b] rounded-xl'>5</div>
+
+    <div className='col-span-3 row-span-3 bg-[#17181b] rounded-xl'>6</div>
+
+    <div className=' row-span-3 bg-[#17181b] rounded-xl'>7</div>
+    <div className='col-span-2 row-span-3 bg-[#17181b] rounded-xl'>8</div>
+    <div className='row-span-2 col-span-3 bg-[#17181b] rounded-xl'>9</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(12,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(6,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px]"
+>
+  <div class="bg-[#17181b] rounded-xl"></div>
+  <div class="bg-[#17181b] rounded-xl"></div>
+  <div class="bg-[#17181b] rounded-xl"></div>
+  <div class="col-span-2 row-span-3 bg-[#17181b] rounded-xl"></div>
+  <div class="row-span-3 bg-[#17181b] rounded-xl"></div>
+
+  <div class="col-span-3 row-span-3 bg-[#17181b] rounded-xl"></div>
+
+  <div class=" row-span-3 bg-[#17181b] rounded-xl"></div>
+  <div class="col-span-2 row-span-3 bg-[#17181b] rounded-xl"></div>
+  <div class="row-span-2 col-span-3 bg-[#17181b] rounded-xl"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center bg-[#0b0a0d] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(12,1fr)] md:grid-cols-[repeat(5,1fr)] md:grid-rows-[repeat(6,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='col-span-3 md:col-span-2 row-span-2 bg-[#17181b] rounded-xl'>1</div>
+
+    <div className='bg-[#17181b] rounded-xl'>2</div>
+    <div className='bg-[#17181b] rounded-xl'>3</div>
+    <div className='bg-[#17181b] rounded-xl'>4</div>
+
+    <div className='col-span-3 row-span-3 bg-[#17181b] rounded-xl'>5</div>
+    <div className='col-span-3 md:col-span-2 row-span-2 bg-[#17181b] rounded-xl'>6</div>
+
+    <div className='col-span-3 md:col-span-2 row-span-2 bg-[#17181b] rounded-xl'>7</div>
+    <div className='col-span-3 row-span-2 bg-[#17181b] rounded-xl'>8</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(12,1fr)] md:grid-cols-[repeat(5,1fr)] md:grid-rows-[repeat(6,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px]"
+>
+  <div
+    class="col-span-3 md:col-span-2 row-span-2 bg-[#17181b] rounded-xl"
+  ></div>
+
+  <div class="bg-[#17181b] rounded-xl"></div>
+  <div class="bg-[#17181b] rounded-xl"></div>
+  <div class="bg-[#17181b] rounded-xl"></div>
+
+  <div class="col-span-3 row-span-3 bg-[#17181b] rounded-xl"></div>
+  <div
+    class="col-span-3 md:col-span-2 row-span-2 bg-[#17181b] rounded-xl"
+  ></div>
+
+  <div
+    class="col-span-3 md:col-span-2 row-span-2 bg-[#17181b] rounded-xl"
+  ></div>
+  <div class="col-span-3 row-span-2 bg-[#17181b] rounded-xl"></div>
+</div>
+```
+
+</CodeBlock>

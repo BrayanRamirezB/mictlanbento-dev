@@ -1,0 +1,98 @@
+---
+name: Solid Colors Combinations 7
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#202427' color='bg-[#202427]' client:load />
+  <Badge
+    text='#d1e0e5'
+    color='bg-[#d1e0e5]'
+    textColor='text-zinc-700'
+    client:load
+  />
+  <Badge
+    text='#f3e18e'
+    color='bg-[#f3e18e]'
+    textColor='text-zinc-700'
+    client:load
+  />
+  <Badge text='#448aa3' color='bg-[#448aa3]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#181d1e] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='row-span-2 bg-[#202427] rounded-sm'>1</div>
+    <div className='bg-[#d1e0e5] rounded-sm text-zinc-700'>2</div>
+    <div className='bg-[#f3e18e] rounded-sm text-zinc-700'>3</div>
+
+    <div className='col-span-2 bg-[#448aa3] rounded-sm'>4</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(2,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px]"
+>
+  <div class="row-span-2 bg-[#202427] rounded-sm"></div>
+  <div class="bg-[#d1e0e5] rounded-sm"></div>
+  <div class="bg-[#f3e18e] rounded-sm"></div>
+
+  <div class="col-span-2 bg-[#448aa3] rounded-sm"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center bg-[#181d1e] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='row-span-3 bg-[#202427] rounded-sm'>1</div>
+    <div className='row-span-2 bg-[#d1e0e5] rounded-sm text-zinc-700'>2</div>
+    <div className='bg-[#448aa3] rounded-sm'>3</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(3,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px]"
+>
+  <div class="row-span-3 bg-[#202427] rounded-sm"></div>
+  <div class="row-span-2 bg-[#d1e0e5] rounded-sm"></div>
+  <div class="bg-[#448aa3] rounded-sm"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center bg-[#181d1e] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(3,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='col-span-3 row-span-2 bg-[#d1e0e5] rounded-sm text-zinc-700'>1</div>
+    <div className='bg-[#d1e0e5] rounded-sm text-zinc-700'>2</div>
+    <div className='bg-[#d1e0e5] rounded-sm text-zinc-700'>3</div>
+    <div className='bg-[#d1e0e5] rounded-sm text-zinc-700'>4</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(3,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px]"
+>
+  <div class="col-span-3 row-span-2 bg-[#d1e0e5] rounded-sm"></div>
+  <div class="bg-[#d1e0e5] rounded-sm"></div>
+  <div class="bg-[#d1e0e5] rounded-sm"></div>
+  <div class="bg-[#d1e0e5] rounded-sm"></div>
+</div>
+```
+
+</CodeBlock>

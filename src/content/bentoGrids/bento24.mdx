@@ -1,0 +1,92 @@
+---
+name: Solid Color 9
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#1d1f1c' color='bg-[#1d1f1c]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#0b0a0d] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(4,1fr)] md:grid-rows-[repeat(3,1fr)] w-full min-h-[500px] content-bento'>
+    <div className='bg-[#1d1f1c] border border-[#454644]'>1</div>
+    <div className='bg-[#1d1f1c] border border-[#454644]'>2</div>
+    <div className='col-span-2 bg-[#1d1f1c] border border-[#454644]'>3</div>
+
+    <div className='bg-[#1d1f1c] border border-[#454644]'>4</div>
+    <div className='order-1 md:order-none col-span-2 bg-[#1d1f1c] border border-[#454644]'>5</div>
+    <div className='bg-[#1d1f1c] border border-[#454644]'>6</div>
+
+    <div className='col-span-2 bg-[#1d1f1c] border border-[#454644]'>7</div>
+    <div className='bg-[#1d1f1c] border border-[#454644]'>8</div>
+    <div className='bg-[#1d1f1c] border border-[#454644]'>9</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(6,1fr)] md:grid-cols-[repeat(4,1fr)] md:grid-rows-[repeat(3,1fr)] w-full min-h-[500px]"
+>
+  <div class="bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="col-span-2 bg-[#1d1f1c] border border-[#454644]"></div>
+
+  <div class="bg-[#1d1f1c] border border-[#454644]"></div>
+  <div
+    class="order-1 md:order-none col-span-2 bg-[#1d1f1c] border border-[#454644]"
+  ></div>
+  <div class="bg-[#1d1f1c] border border-[#454644]"></div>
+
+  <div class="col-span-2 bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="bg-[#1d1f1c] border border-[#454644]"></div>
+</div>
+```
+
+</CodeBlock>
+
+<div className='flex items-center justify-center bg-[#0b0a0d] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(16,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(9,1fr)] w-full min-h-[500px] content-bento'>
+    <div className='col-span-3 md:col-span-2 row-span-6 bg-[#1d1f1c] border border-[#454644]'>1</div>
+
+    <div className='col-span-4 row-span-3 bg-[#1d1f1c] border border-[#454644]'>2</div>
+    <div className='col-span-4 row-span-3 bg-[#1d1f1c] border border-[#454644]'>3</div>
+
+    <div className='col-span-2 row-span-3 bg-[#1d1f1c] border border-[#454644]'>4</div>
+    <div className='row-span-3 bg-[#1d1f1c] border border-[#454644]'>5</div>
+
+    <div className='col-span-3 bg-[#1d1f1c] border border-[#454644]'>6</div>
+    <div className='col-span-3 bg-[#1d1f1c] border border-[#454644]'>7</div>
+    <div className='col-span-3 bg-[#1d1f1c] border border-[#454644]'>8</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(16,1fr)] md:grid-cols-[repeat(6,1fr)] md:grid-rows-[repeat(9,1fr)] w-full min-h-[500px]"
+>
+  <div
+    class="col-span-3 md:col-span-2 row-span-6 bg-[#1d1f1c] border border-[#454644]"
+  ></div>
+
+  <div class="col-span-4 row-span-3 bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="col-span-4 row-span-3 bg-[#1d1f1c] border border-[#454644]"></div>
+
+  <div class="col-span-2 row-span-3 bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="row-span-3 bg-[#1d1f1c] border border-[#454644]"></div>
+
+  <div class="col-span-3 bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="col-span-3 bg-[#1d1f1c] border border-[#454644]"></div>
+  <div class="col-span-3 bg-[#1d1f1c] border border-[#454644]"></div>
+</div>
+```
+
+</CodeBlock>

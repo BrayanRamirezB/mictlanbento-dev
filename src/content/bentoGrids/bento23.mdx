@@ -1,0 +1,33 @@
+---
+name: Transparent with Border
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#292929' color='bg-[#292929]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#040504] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='row-span-2 border border-[#292929] rounded-md'>1</div>
+    <div className='col-span-2 border border-[#292929] rounded-md'>2</div>
+    <div className='col-span-2 border border-[#292929] rounded-md'>3</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,1fr)] gap-x-3 gap-y-4 w-full min-h-[500px]"
+>
+  <div class="row-span-2 border border-[#292929] rounded-md"></div>
+  <div class="col-span-2 border border-[#292929] rounded-md"></div>
+  <div class="col-span-2 border border-[#292929] rounded-md"></div>
+</div>
+```
+
+</CodeBlock>

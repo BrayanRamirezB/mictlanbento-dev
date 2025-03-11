@@ -1,0 +1,61 @@
+---
+name: Solid Colors Combinations 6
+---
+
+import CodeBlock from '@/components/CodeBlock.jsx'
+import Badge from '@/components/Badge.jsx'
+
+<div className='flex flex-row flex-wrap items-center justify-center gap-2 pb-8'>
+  <Badge text='#151718' color='bg-[#151718]' client:load />
+  <Badge
+    text='#fce33d'
+    color='bg-[#fce33d]'
+    textColor='text-zinc-700'
+    client:load
+  />
+  <Badge text='#af73fb' color='bg-[#af73fb]' client:load />
+  <Badge text='#07d749' color='bg-[#07d749]' client:load />
+</div>
+
+<div className='flex items-center justify-center bg-[#fcfdfc] p-4 rounded-xl'>
+  <div className='grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(9,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(6,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px] content-bento'>
+    <div className='order-1 md:order-none bg-[#151718] rounded-2xl'>1</div>
+    <div className='order-2 md:order-none row-span-2 bg-[#fce33d] rounded-2xl'>2</div>
+    <div className='order-3 md:order-none row-span-2 bg-[#07d749] rounded-2xl'>3</div>
+
+    <div className='order-4 md:order-none row-span-3 bg-[#151718] rounded-2xl'>4</div>
+    <div className='order-5 md:order-none row-span-2 bg-[#151718] rounded-2xl'>5</div>
+    <div className='order-7 md:order-none bg-[#151718] rounded-2xl'>6</div>
+
+    <div className='order-8 md:order-none bg-[#af73fb] rounded-2xl'>7</div>
+
+    <div className='order-6 md:order-none row-span-2 bg-[#07d749] rounded-2xl'>8</div>
+    <div className='order-9 md:order-none col-span-2 row-span-2 bg-[#151718] rounded-2xl'>9</div>
+
+  </div>
+</div>
+
+<CodeBlock client:load>
+
+```html
+<div
+  class="grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(9,1fr)] md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(6,1fr)] gap-x-4 gap-y-4 w-full min-h-[500px]"
+>
+  <div class="order-1 md:order-none bg-[#151718] rounded-2xl"></div>
+  <div class="order-2 md:order-none row-span-2 bg-[#fce33d] rounded-2xl"></div>
+  <div class="order-3 md:order-none row-span-2 bg-[#07d749] rounded-2xl"></div>
+
+  <div class="order-4 md:order-none row-span-3 bg-[#151718] rounded-2xl"></div>
+  <div class="order-5 md:order-none row-span-2 bg-[#151718] rounded-2xl"></div>
+  <div class="order-7 md:order-none bg-[#151718] rounded-2xl"></div>
+
+  <div class="order-8 md:order-none bg-[#af73fb] rounded-2xl"></div>
+
+  <div class="order-6 md:order-none row-span-2 bg-[#07d749] rounded-2xl"></div>
+  <div
+    class="order-9 md:order-none col-span-2 row-span-2 bg-[#151718] rounded-2xl"
+  ></div>
+</div>
+```
+
+</CodeBlock>
